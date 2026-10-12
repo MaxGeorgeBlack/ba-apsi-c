@@ -1,0 +1,1112 @@
+{
+  "description": "Policy-stress workload with explicit grants and revoked memories for SuperLocalMemory + BA-APSI.",
+  "grants": {
+    "agent_a_stress_p00_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p00_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p00_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p02_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p02_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p02_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p04_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p04_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p04_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p06_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p06_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p06_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p08_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p08_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p08_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p10_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p10_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p10_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p12_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p12_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p12_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p14_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p14_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p14_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p16_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p16_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p16_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p18_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p18_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p18_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p20_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p20_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p20_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p22_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p22_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p22_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p24_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p24_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p24_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p26_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p26_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p26_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p28_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p28_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p28_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p30_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p30_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p30_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p32_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p32_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p32_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p34_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p34_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p34_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p36_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p36_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p36_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p38_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p38_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p38_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p40_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p40_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p40_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p42_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p42_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p42_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p44_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p44_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p44_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p46_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p46_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p46_risk_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p48_document_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p48_preference_r2": [
+      "agent_c"
+    ],
+    "agent_a_stress_p48_risk_r2": [
+      "agent_c"
+    ],
+    "agent_b_stress_p00_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p00_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p00_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p02_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p02_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p02_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p04_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p04_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p04_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p06_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p06_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p06_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p08_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p08_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p08_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p10_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p10_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p10_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p12_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p12_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p12_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p14_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p14_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p14_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p16_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p16_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p16_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p18_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p18_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p18_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p20_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p20_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p20_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p22_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p22_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p22_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p24_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p24_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p24_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p26_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p26_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p26_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p28_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p28_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p28_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p30_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p30_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p30_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p32_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p32_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p32_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p34_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p34_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p34_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p36_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p36_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p36_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p38_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p38_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p38_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p40_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p40_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p40_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p42_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p42_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p42_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p44_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p44_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p44_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p46_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p46_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p46_risk_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p48_document_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p48_preference_r2": [
+      "agent_d"
+    ],
+    "agent_b_stress_p48_risk_r2": [
+      "agent_d"
+    ],
+    "agent_c_stress_p00_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p00_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p00_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p02_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p02_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p02_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p04_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p04_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p04_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p06_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p06_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p06_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p08_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p08_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p08_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p10_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p10_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p10_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p12_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p12_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p12_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p14_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p14_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p14_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p16_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p16_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p16_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p18_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p18_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p18_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p20_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p20_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p20_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p22_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p22_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p22_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p24_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p24_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p24_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p26_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p26_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p26_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p28_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p28_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p28_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p30_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p30_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p30_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p32_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p32_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p32_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p34_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p34_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p34_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p36_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p36_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p36_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p38_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p38_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p38_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p40_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p40_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p40_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p42_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p42_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p42_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p44_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p44_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p44_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p46_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p46_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p46_risk_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p48_document_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p48_preference_r2": [
+      "agent_a"
+    ],
+    "agent_c_stress_p48_risk_r2": [
+      "agent_a"
+    ],
+    "agent_d_stress_p00_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p00_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p00_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p02_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p02_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p02_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p04_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p04_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p04_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p06_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p06_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p06_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p08_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p08_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p08_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p10_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p10_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p10_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p12_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p12_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p12_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p14_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p14_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p14_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p16_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p16_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p16_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p18_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p18_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p18_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p20_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p20_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p20_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p22_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p22_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p22_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p24_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p24_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p24_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p26_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p26_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p26_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p28_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p28_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p28_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p30_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p30_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p30_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p32_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p32_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p32_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p34_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p34_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p34_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p36_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p36_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p36_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p38_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p38_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p38_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p40_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p40_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p40_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p42_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p42_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p42_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p44_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p44_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p44_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p46_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p46_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p46_risk_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p48_document_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p48_preference_r2": [
+      "agent_b"
+    ],
+    "agent_d_stress_p48_risk_r2": [
+      "agent_b"
+    ]
+  },
+  "policy_version": "v2",
+  "revoked_memory_ids": [
+    "agent_a_stress_p00_document_r1",
+    "agent_a_stress_p00_preference_r1",
+    "agent_a_stress_p00_risk_r1",
+    "agent_a_stress_p03_document_r1",
+    "agent_a_stress_p03_preference_r1",
+    "agent_a_stress_p03_risk_r1",
+    "agent_a_stress_p06_document_r1",
+    "agent_a_stress_p06_preference_r1",
+    "agent_a_stress_p06_risk_r1",
+    "agent_a_stress_p09_document_r1",
+    "agent_a_stress_p09_preference_r1",
+    "agent_a_stress_p09_risk_r1",
+    "agent_a_stress_p12_document_r1",
+    "agent_a_stress_p12_preference_r1",
+    "agent_a_stress_p12_risk_r1",
+    "agent_a_stress_p15_document_r1",
+    "agent_a_stress_p15_preference_r1",
+    "agent_a_stress_p15_risk_r1",
+    "agent_a_stress_p18_document_r1",
+    "agent_a_stress_p18_preference_r1",
+    "agent_a_stress_p18_risk_r1",
+    "agent_a_stress_p21_document_r1",
+    "agent_a_stress_p21_preference_r1",
+    "agent_a_stress_p21_risk_r1",
+    "agent_a_stress_p24_document_r1",
+    "agent_a_stress_p24_preference_r1",
+    "agent_a_stress_p24_risk_r1",
+    "agent_a_stress_p27_document_r1",
+    "agent_a_stress_p27_preference_r1",
+    "agent_a_stress_p27_risk_r1",
+    "agent_a_stress_p30_document_r1",
+    "agent_a_stress_p30_preference_r1",
+    "agent_a_stress_p30_risk_r1",
+    "agent_a_stress_p33_document_r1",
+    "agent_a_stress_p33_preference_r1",
+    "agent_a_stress_p33_risk_r1",
+    "agent_a_stress_p36_document_r1",
+    "agent_a_stress_p36_preference_r1",
+    "agent_a_stress_p36_risk_r1",
+    "agent_a_stress_p39_document_r1",
+    "agent_a_stress_p39_preference_r1",
+    "agent_a_stress_p39_risk_r1",
+    "agent_a_stress_p42_document_r1",
+    "agent_a_stress_p42_preference_r1",
+    "agent_a_stress_p42_risk_r1",
+    "agent_a_stress_p45_document_r1",
+    "agent_a_stress_p45_preference_r1",
+    "agent_a_stress_p45_risk_r1",
+    "agent_a_stress_p48_document_r1",
+    "agent_a_stress_p48_preference_r1",
+    "agent_a_stress_p48_risk_r1",
+    "agent_b_stress_p00_document_r1",
+    "agent_b_stress_p00_preference_r1",
+    "agent_b_stress_p00_risk_r1",
+    "agent_b_stress_p03_document_r1",
+    "agent_b_stress_p03_preference_r1",
+    "agent_b_stress_p03_risk_r1",
+    "agent_b_stress_p06_document_r1",
+    "agent_b_stress_p06_preference_r1",
+    "agent_b_stress_p06_risk_r1",
+    "agent_b_stress_p09_document_r1",
+    "agent_b_stress_p09_preference_r1",
+    "agent_b_stress_p09_risk_r1",
+    "agent_b_stress_p12_document_r1",
+    "agent_b_stress_p12_preference_r1",
+    "agent_b_stress_p12_risk_r1",
+    "agent_b_stress_p15_document_r1",
+    "agent_b_stress_p15_preference_r1",
+    "agent_b_stress_p15_risk_r1",
+    "agent_b_stress_p18_document_r1",
+    "agent_b_stress_p18_preference_r1",
+    "agent_b_stress_p18_risk_r1",
+    "agent_b_stress_p21_document_r1",
+    "agent_b_stress_p21_preference_r1",
+    "agent_b_stress_p21_risk_r1",
+    "agent_b_stress_p24_document_r1",
+    "agent_b_stress_p24_preference_r1",
+    "agent_b_stress_p24_risk_r1",
+    "agent_b_stress_p27_document_r1",
+    "agent_b_stress_p27_preference_r1",
+    "agent_b_stress_p27_risk_r1",
+    "agent_b_stress_p30_document_r1",
+    "agent_b_stress_p30_preference_r1",
+    "agent_b_stress_p30_risk_r1",
+    "agent_b_stress_p33_document_r1",
+    "agent_b_stress_p33_preference_r1",
+    "agent_b_stress_p33_risk_r1",
+    "agent_b_stress_p36_document_r1",
+    "agent_b_stress_p36_preference_r1",
+    "agent_b_stress_p36_risk_r1",
+    "agent_b_stress_p39_document_r1",
+    "agent_b_stress_p39_preference_r1",
+    "agent_b_stress_p39_risk_r1",
+    "agent_b_stress_p42_document_r1",
+    "agent_b_stress_p42_preference_r1",
+    "agent_b_stress_p42_risk_r1",
+    "agent_b_stress_p45_document_r1",
+    "agent_b_stress_p45_preference_r1",
+    "agent_b_stress_p45_risk_r1",
+    "agent_b_stress_p48_document_r1",
+    "agent_b_stress_p48_preference_r1",
+    "agent_b_stress_p48_risk_r1",
+    "agent_c_stress_p00_document_r1",
+    "agent_c_stress_p00_preference_r1",
+    "agent_c_stress_p00_risk_r1",
+    "agent_c_stress_p03_document_r1",
+    "agent_c_stress_p03_preference_r1",
+    "agent_c_stress_p03_risk_r1",
+    "agent_c_stress_p06_document_r1",
+    "agent_c_stress_p06_preference_r1",
+    "agent_c_stress_p06_risk_r1",
+    "agent_c_stress_p09_document_r1",
+    "agent_c_stress_p09_preference_r1",
+    "agent_c_stress_p09_risk_r1",
+    "agent_c_stress_p12_document_r1",
+    "agent_c_stress_p12_preference_r1",
+    "agent_c_stress_p12_risk_r1",
+    "agent_c_stress_p15_document_r1",
+    "agent_c_stress_p15_preference_r1",
+    "agent_c_stress_p15_risk_r1",
+    "agent_c_stress_p18_document_r1",
+    "agent_c_stress_p18_preference_r1",
+    "agent_c_stress_p18_risk_r1",
+    "agent_c_stress_p21_document_r1",
+    "agent_c_stress_p21_preference_r1",
+    "agent_c_stress_p21_risk_r1",
+    "agent_c_stress_p24_document_r1",
+    "agent_c_stress_p24_preference_r1",
+    "agent_c_stress_p24_risk_r1",
+    "agent_c_stress_p27_document_r1",
+    "agent_c_stress_p27_preference_r1",
+    "agent_c_stress_p27_risk_r1",
+    "agent_c_stress_p30_document_r1",
+    "agent_c_stress_p30_preference_r1",
+    "agent_c_stress_p30_risk_r1",
+    "agent_c_stress_p33_document_r1",
+    "agent_c_stress_p33_preference_r1",
+    "agent_c_stress_p33_risk_r1",
+    "agent_c_stress_p36_document_r1",
+    "agent_c_stress_p36_preference_r1",
+    "agent_c_stress_p36_risk_r1",
+    "agent_c_stress_p39_document_r1",
+    "agent_c_stress_p39_preference_r1",
+    "agent_c_stress_p39_risk_r1",
+    "agent_c_stress_p42_document_r1",
+    "agent_c_stress_p42_preference_r1",
+    "agent_c_stress_p42_risk_r1",
+    "agent_c_stress_p45_document_r1",
+    "agent_c_stress_p45_preference_r1",
+    "agent_c_stress_p45_risk_r1",
+    "agent_c_stress_p48_document_r1",
+    "agent_c_stress_p48_preference_r1",
+    "agent_c_stress_p48_risk_r1",
+    "agent_d_stress_p00_document_r1",
+    "agent_d_stress_p00_preference_r1",
+    "agent_d_stress_p00_risk_r1",
+    "agent_d_stress_p03_document_r1",
+    "agent_d_stress_p03_preference_r1",
+    "agent_d_stress_p03_risk_r1",
+    "agent_d_stress_p06_document_r1",
+    "agent_d_stress_p06_preference_r1",
+    "agent_d_stress_p06_risk_r1",
+    "agent_d_stress_p09_document_r1",
+    "agent_d_stress_p09_preference_r1",
+    "agent_d_stress_p09_risk_r1",
+    "agent_d_stress_p12_document_r1",
+    "agent_d_stress_p12_preference_r1",
+    "agent_d_stress_p12_risk_r1",
+    "agent_d_stress_p15_document_r1",
+    "agent_d_stress_p15_preference_r1",
+    "agent_d_stress_p15_risk_r1",
+    "agent_d_stress_p18_document_r1",
+    "agent_d_stress_p18_preference_r1",
+    "agent_d_stress_p18_risk_r1",
+    "agent_d_stress_p21_document_r1",
+    "agent_d_stress_p21_preference_r1",
+    "agent_d_stress_p21_risk_r1",
+    "agent_d_stress_p24_document_r1",
+    "agent_d_stress_p24_preference_r1",
+    "agent_d_stress_p24_risk_r1",
+    "agent_d_stress_p27_document_r1",
+    "agent_d_stress_p27_preference_r1",
+    "agent_d_stress_p27_risk_r1",
+    "agent_d_stress_p30_document_r1",
+    "agent_d_stress_p30_preference_r1",
+    "agent_d_stress_p30_risk_r1",
+    "agent_d_stress_p33_document_r1",
+    "agent_d_stress_p33_preference_r1",
+    "agent_d_stress_p33_risk_r1",
+    "agent_d_stress_p36_document_r1",
+    "agent_d_stress_p36_preference_r1",
+    "agent_d_stress_p36_risk_r1",
+    "agent_d_stress_p39_document_r1",
+    "agent_d_stress_p39_preference_r1",
+    "agent_d_stress_p39_risk_r1",
+    "agent_d_stress_p42_document_r1",
+    "agent_d_stress_p42_preference_r1",
+    "agent_d_stress_p42_risk_r1",
+    "agent_d_stress_p45_document_r1",
+    "agent_d_stress_p45_preference_r1",
+    "agent_d_stress_p45_risk_r1",
+    "agent_d_stress_p48_document_r1",
+    "agent_d_stress_p48_preference_r1",
+    "agent_d_stress_p48_risk_r1"
+  ]
+}
