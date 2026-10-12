@@ -24,7 +24,7 @@ def main():
         'recover',
     ]
     observations = 0
-    with tempfile.TemporaryDirectory(prefix='rq1_setup_lifecycle_') as directory:
+    with tempfile.TemporaryDirectory(prefix='protocol_lifecycle_') as directory:
         for mode, recovery, solver in [
             ('fresh', 'cold', 'bsgs'),
             ('reuse', 'cold', 'bsgs'),

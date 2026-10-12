@@ -1,15 +1,15 @@
-# 执行说明
+# Running the benchmarks
 
-以下命令在 Ubuntu 24.04 或 Windows 的 Ubuntu WSL 中执行。PowerShell 中先运行 `wsl -d Ubuntu`。
+Run the commands below in Ubuntu 24.04 or Ubuntu on Windows through WSL. From PowerShell, enter WSL with `wsl -d Ubuntu`.
 
-## 安装依赖
+## Install dependencies
 
 ```bash
 sudo apt-get update
-sudo apt-get install -y build-essential cmake libssl-dev libgmp-dev flex bison curl tar python3 python3-venv libgomp1 git
+sudo apt-get install -y build-essential cmake libssl-dev libgmp-dev flex bison curl tar python3 git
 ```
 
-安装 PBC 0.5.14；已安装该版本时可跳过：
+Install PBC 0.5.14 if it is not already available:
 
 ```bash
 pbc_dir=$(mktemp -d)
@@ -24,7 +24,7 @@ sudo ldconfig
 popd
 ```
 
-## 构建与验证
+## Build and validate
 
 ```bash
 git clone https://github.com/MaxGeorgeBlack/ba-apsi-c.git
@@ -32,89 +32,89 @@ cd ba-apsi-c
 bash scripts/build.sh
 ```
 
-在已有代码目录中直接执行 `bash scripts/build.sh`。构建要求 CMake ≥ 3.18、OpenSSL ≥ 3.0。
+If the source directory already exists, run `bash scripts/build.sh` from its root. The build requires CMake >= 3.18 and OpenSSL >= 3.0.
 
-执行包含 ASan/UBSan、协议生命周期、固定基预计算、恢复算法、求交基线及门控接口的验证：
+Run the full protocol, recovery, lifecycle and fixed-base checks, including AddressSanitizer and UndefinedBehaviorSanitizer:
 
 ```bash
 python3 experiments/verify.py
 ```
 
-## 单组协议测试
+## Measure stage latency
+
+Measure setup, client/server authorization, intersection, encapsulation, aggregation and recovery latency for one configuration:
 
 ```bash
-./build/ba_bench --n 100 --m 100 --k 50 --max-value 1000 --repeat 5 --warmup 1
-./build/ba_bench --solver kangaroo --n 100 --m 100 --k 50
-./build/ba_bench --mode reference --n 100 --m 100 --k 50
-./build/ba_bench --help
+mkdir -p results
+./build/ba_bench --n 100 --m 100 --k 50 --max-value 1000 \
+  --repeat 5 --warmup 1 --csv results/stage_latency.csv
 ```
 
-将公共初始化和恢复预处理复用到多个会话：
+Compare recovery solvers or arithmetic modes by adding `--solver bsgs`, `--solver kangaroo`, `--mode optimized` or `--mode reference`. Use `./build/ba_bench --help` to inspect all options.
+
+Measure stage latency as both set sizes increase, keeping the public capacity and recovery bound fixed:
 
 ```bash
-./build/ba_bench --solver kangaroo --setup-mode reuse --recover-mode prepared-fast \
-  --n 100 --m 100 --k 50 --capacity 100 --max-value 100000 --repeat 15 --warmup 3
-```
-
-`--recover-mode` 可选 `cold`、`prepared`、`prepared-fast`；后两者要求 `--setup-mode reuse`。
-保存逐次输出时，先执行 `mkdir -p results`，再添加 `--csv results/my_run.csv`。CSV 文件必须尚不存在。
-
-## 批量实验
-
-每次指定新的输出目录；所有命令从仓库根目录执行。
-
-```bash
-# RQ1、RQ2、聚合值扫描及完整密码求交 RQ3
-python3 experiments/run_paper.py --out results/rq123 \
-  --sections rq1,rq2,sum,rq3 --repeats 5 --warmup 1 --rq3-repeats 3 --rq3-warmup 0
-
-# RQ1：复用公共初始化
-python3 experiments/run_paper.py --out results/rq1 --sections rq1 \
+python3 experiments/run_metrics.py --metrics phase-time --out results/size_latency \
   --setup-mode reuse --shuffle-cases --repeats 15 --warmup 3
+```
 
-# RQ1：34 个交集规模，复用恢复预处理
-python3 experiments/run_paper.py --out results/rq1_overlap --sections rq1_overlap \
-  --rq1-overlap-values template --setup-mode reuse --recover-mode prepared-fast \
+## Measure latency versus intersection size
+
+Keep both sets at 100 elements and vary their intersection size:
+
+```bash
+python3 experiments/run_metrics.py --metrics intersection-time --out results/intersection_latency \
+  --intersection-sizes template --setup-mode reuse --recover-mode prepared-fast \
   --shuffle-cases --repeats 15 --warmup 3
-
-# RQ3：独立集合求交测试，BA-APSI 使用预生成标签的匹配模型
-python3 experiments/run_rq3_origin.py --out results/rq3_basic \
-  --settings experiments/rq3_settings.json --repeats 15 --warmup 3 --cpu -1
 ```
 
-修改 `experiments/rq3_settings.json` 可设置独立 RQ3 的集合和交集规模。
-`run_paper.py` 的 `--sections` 选择实验，`--rq1-overlap-values` 接受逗号分隔的交集规模。
-需要绑核时为驱动添加 `--cpu N`，其中 N 必须在 `taskset -pc $$` 显示的可用 CPU 中。
-仅在输入与配置不变且已完成文件保持完整时使用 `run_paper.py --resume`。
+Replace `template` with a comma-separated list such as `0,10,20,30,40,50,60,70,100` to choose intersection sizes.
 
-## RQ4 记忆检索与门控
+## Measure the recovery fraction of total latency
 
-使用 Python 3.11–3.14 创建环境；Ubuntu 24.04 的 Python 3.12 可直接使用：
+Vary the client capacity and its associated recovery bound while recording all protocol stages:
 
 ```bash
-python3 -m venv .venv-slm
-.venv-slm/bin/python -m pip install -r experiments/requirements-slm.txt
-
-# 只运行 BM25 模式；不需要下载嵌入模型
-OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
-  .venv-slm/bin/python experiments/run_slm.py --mode bm25 --out results/rq4_bm25
+python3 experiments/run_metrics.py --metrics recovery-share --out results/recovery_fraction \
+  --repeats 5 --warmup 1
 ```
 
-运行全部三种模式前，在线加载 Mode A 的模型以建立本地缓存，并按 [Ollama 官方安装说明](https://docs.ollama.com/linux) 安装 Ollama：
+Calculate the recovery percentage for each recorded run as `100 * recover_ms / total_ms`. To print the average of these percentages for each configuration:
 
 ```bash
-.venv-slm/bin/python -c 'from sentence_transformers import SentenceTransformer; SentenceTransformer("nomic-ai/nomic-embed-text-v1.5", trust_remote_code=True, device="cpu")'
-# 在 Ollama 服务运行时下载 Mode B 的模型
-ollama pull nomic-embed-text
-ollama pull llama3.2:1b
+python3 - <<'PY'
+import csv
+import statistics
+from pathlib import Path
+
+for path in sorted(Path('results/recovery_fraction/raw').glob('*.csv')):
+    with path.open(newline='') as stream:
+        rows = list(csv.DictReader(stream))
+    shares = [100 * float(row['recover_ms']) / float(row['total_ms']) for row in rows]
+    print(path.stem, statistics.mean(shares))
+PY
 ```
 
-确保本地 11435 端口空闲后执行；驱动会启动和关闭该端口的独立 Ollama 服务：
+## Measure bounded recovery latency
+
+Measure cold recovery latency across aggregate values within a fixed public bound:
 
 ```bash
-HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
-  python3 experiments/run_slm_suite.py --python .venv-slm/bin/python --out results/rq4
+python3 experiments/run_metrics.py --metrics recovery-time --out results/recovery_latency \
+  --repeats 5 --warmup 1
 ```
 
-输入默认读取 `data/slm/` 中的 `memories.jsonl`、`queries.jsonl` 和 `policies.json`。
-单模式驱动可加 `--limit 2` 执行两个查询；批量驱动可用 `--resume` 跳过经校验的完整模式。
+For one bound, aggregate value and solver, use `ba_dlp_bench BOUND SUM SOLVER REPEATS WARMUP CSV`:
+
+```bash
+./build/ba_dlp_bench 10000000 5000000 kangaroo 5 1 results/recovery_value.csv
+```
+
+## Configure measurement runs
+
+Select multiple metrics with a comma-separated `--metrics` list. Each sweep runs BSGS and Kangaroo sequentially. Warmup runs are excluded from the saved observations.
+
+For protocol stage measurements, use `--setup-mode fresh` to include complete initialization in every run, or `--setup-mode reuse` to initialize once per configuration. Choose `--recover-mode cold`, `prepared` or `prepared-fast`; the latter two require `--setup-mode reuse`. Reused initialization and recovery preprocessing costs are recorded separately in `offline_setup_ms` and `offline_recover_ms`. Treat repeated offline fields as one measurement per configuration. The standalone `recovery-time` sweep supports only cold recovery.
+
+Use a new output directory or CSV filename for each run. Add `--resume` to the batch driver only when its recorded inputs and configuration are unchanged. To pin benchmark processes to a CPU, add `--cpu N`, choosing N from the affinity list reported by `taskset -pc $$`.

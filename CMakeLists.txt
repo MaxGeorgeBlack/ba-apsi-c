@@ -39,23 +39,5 @@ target_link_libraries(ba_prepared_tests PRIVATE baapsi)
 add_test(NAME prepared_recovery_correctness COMMAND ba_prepared_tests ${CMAKE_CURRENT_SOURCE_DIR}/params/type-a-160-512.param)
 set_tests_properties(prepared_recovery_correctness PROPERTIES TIMEOUT 180)
 
-add_library(ba_baselines STATIC src/baselines.c)
-target_link_libraries(ba_baselines PUBLIC baapsi)
-
-add_executable(ba_compare src/compare.c)
-target_link_libraries(ba_compare PRIVATE ba_baselines)
-
 add_executable(ba_dlp_bench src/dlp_bench.c)
 target_link_libraries(ba_dlp_bench PRIVATE baapsi)
-
-add_executable(ba_gate src/gate.c)
-target_link_libraries(ba_gate PRIVATE baapsi)
-
-add_executable(ba_baseline_tests tests/test_baselines.c)
-target_link_libraries(ba_baseline_tests PRIVATE ba_baselines)
-add_test(NAME baseline_correctness COMMAND ba_baseline_tests)
-
-# Standalone complexity experiment: intentionally links no protocol libraries.
-add_executable(rq3_intersect_basic experiments/rq3_intersect_basic.c)
-add_test(NAME basic_intersect_correctness COMMAND rq3_intersect_basic --self-test)
-set_tests_properties(basic_intersect_correctness PROPERTIES TIMEOUT 30)
